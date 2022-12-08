@@ -26,7 +26,7 @@ def insertBLOB(id, username, photo,extracted):
         insert_blob_tuple = (id,username,image,extracted)
         result = cursor.execute(sql_insert_blob_query, insert_blob_tuple)
         connection.commit()
-        print("Image  inserted successfully as a BLOB into python_employee table", result)
+        print("Image  inserted successfully as a BLOB into OCR Table", result)
 
     except mysql.connector.Error as error:
         print("Failed inserting BLOB data into MySQL table {}".format(error))
